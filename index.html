@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr" ng-app='MomsWebsite'>
+<html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
     <title>Test Site</title>
@@ -12,10 +12,14 @@
     <script src="js/app.js" charset="utf-8"></script>
     <base href="/" target="_blank">
   </head>
-  <body>
-    <div class="title-area">
-      <h1 id="title" ng-click="ctrl.reload()">Test Title</h1>
-    </div>
+  <body ng-app='MomsWebsite'>
+      <div class="title-area">
+        <h1 id="title">Test Title</h1>
+      </div>
+
+    <main ng-view>
+      <ng-include src="home.html"></ng-include>
+    </main>
 
   </body>
 </html>
