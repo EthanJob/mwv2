@@ -1,10 +1,10 @@
 const app = angular.module('MomsWebsite', ['ngRoute']);
 
-app.controller('HomeController', ['$route', function () {
+app.controller('MainController', ['$route', function () {
 
-}]);
-
-app.controller('DessertController', ['$route', function () {
+  this.reload = () => {
+    location.reload();
+  };
 
 }]);
 
@@ -14,7 +14,7 @@ $locationProvider.html5Mode({ enabled: true });
 
 $routeProvider.when('/', {
   templateUrl: 'home.html',
-  controller: 'HomeController',
+  controller: 'MainController',
   controllerAs: 'ctrl'
 });
 
