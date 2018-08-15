@@ -8,20 +8,22 @@ app.controller('HomeController', ['$route', function () {
 
 }]);
 
+app.controller('DessertController', ['$route', function () {
+
+}]);
+
 app.config(['$routeProvider','$locationProvider', function($routeProvider,$locationProvider) {
 
 $locationProvider.html5Mode({ enabled: true });
 
-$routeProvider.when('/', {
-  templateUrl: 'pages/home.html',
+$routeProvider.when('/home', {
+  templateUrl: 'home.html',
   controller: 'HomeController',
   controllerAs: 'ctrl'
 });
 
 $routeProvider.when('/dessert', {
-  templateUrl: 'pages/dessert.html',
-  controller: 'DessertController',
-  controllerAs: 'ctrl'
+  templateUrl: 'dessert.html'
 });
 
 }]);
