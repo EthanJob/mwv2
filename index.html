@@ -14,11 +14,11 @@
   </head>
   <body ng-app='MomsWebsite' ng-controller='HomeController as ctrl'>
       <div class="title-area">
-        <h1 id="title" ng-click="ctrl.reload()">Test Title</h1>
+        <h1 id="title"><a href="/">Test Title</a></h1>
       </div>
 
     <main ng-view>
-      <ng-include src="pages/home.html"></ng-include>
+      <ng-include src="home.html"></ng-include>
     </main>
 
   </body>

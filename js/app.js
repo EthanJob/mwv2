@@ -2,9 +2,9 @@ const app = angular.module('MomsWebsite', ['ngRoute']);
 
 app.controller('HomeController', ['$route', function () {
 
-  this.reload = () => {
-    location.reload();
-  };
+  // this.reload = () => {
+  //   location.reload();
+  // };
 
 }]);
 
