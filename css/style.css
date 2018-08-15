@@ -22,6 +22,15 @@ hr {
   cursor: pointer;
 }
 
+a {
+  color: black;
+}
+
+a:hover {
+  text-decoration: none;
+  color: black;
+}
+
 body {
   background-image: url("../images/pink_rice.png");
   background-attachment: fixed;
@@ -57,7 +66,7 @@ body {
 }
 
 .pageTitle:hover {
-  color: white;
+  color: grey;
   transform: scale(1.2);
 }
 
