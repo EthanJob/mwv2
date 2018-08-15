@@ -16,10 +16,18 @@ app.config(['$routeProvider','$locationProvider', function($routeProvider,$locat
 
 $locationProvider.html5Mode({ enabled: true });
 
-$routeProvider.when('/home', {
+$routeProvider.when('/', {
   templateUrl: 'home.html',
   controller: 'HomeController',
   controllerAs: 'ctrl'
+});
+
+$routeProvider.when('/lunch', {
+  templateUrl: 'lunch.html'
+});
+
+$routeProvider.when('/dinner', {
+  templateUrl: 'dinner.html'
 });
 
 $routeProvider.when('/dessert', {
