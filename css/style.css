@@ -136,18 +136,3 @@ body {
 .ingredients {
   display: flex;
 }
-
-footer {
-  background-color: pink;
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  /* height: 30px; */
-  width: 100%;
-  /* overflow: hidden; */
-  padding-top: 10px;
-  font-size: 20px;
-  color: white;
-  z-index: 500;
-  text-align: center;
-}

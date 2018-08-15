@@ -9,7 +9,7 @@ app.config(['$routeProvider','$locationProvider', function($routeProvider,$locat
 $locationProvider.html5Mode({ enabled: true });
 
 $routeProvider.when('/', {
-  templateUrl: 'home.html',
+  templateUrl: 'pages/home.html',
   controller: 'HomeController',
   controllerAs: 'ctrl'
 });
